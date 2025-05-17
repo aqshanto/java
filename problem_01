@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class shanto053 {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int c=sc.nextInt();
+        a=5+a;
+        b=11*b;
+        c=3-c;
+        boolean x=(a!=c)&&(c<=b);
+        System.out.println(!x);
+    }
+}
