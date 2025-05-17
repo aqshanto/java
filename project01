@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class shanto053 {
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+
+        String name=sc.nextLine();
+        int age =sc.nextInt();
+        String blood=sc.next();
+
+        if(age>18){
+            String n="Tim";
+            if(name.equals(n)){
+                System.out.println("Account_type: ");
+                String acc=sc.next();
+                System.out.println("Tim Age: "+ age +" Account_type : "+acc);
+            }
+        }else if(age<=18 && age>12){
+            System.out.println(name);
+            System.out.println(blood);
+        }else{
+            System.out.println("else block active");
+            boolean ans=name.contains("John");
+            if(ans){
+                System.out.println(name);
+                System.out.println(age);
+                System.out.println(blood);
+            }
+
+        }
+    }
+}
